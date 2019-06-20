@@ -4,7 +4,7 @@ dotfiles_dir="$( cd "$( dirname "$0" )" && pwd )"
 
 # update vim_runtime
 
-cp ~/.vim_runtime "$dotfiles_dir/.vim_runtime"
+cp -R ~/.vim_runtime "$dotfiles_dir/"
 
 # update zshrc
 

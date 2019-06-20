@@ -93,6 +93,22 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/alek/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/alek/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/alek/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/alek/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -107,6 +123,7 @@ cdls() { cd "$@" && ls; }
 alias cd="cdls"
 alias zshrc="vim ~/.zshrc"
 alias c="clear"
+mcd() { mkdir "$@" && cd "$@"; }
 
 alias gst="git status"
 alias gad="git add"
@@ -123,5 +140,11 @@ alias gf="git fetch"
 alias grst="git reset"
 alias gdif="git diff"
 
+alias conc="conda create"
+alias cona="conda activate"
+alias cond="conda deactivate"
+alias coni="conda install"
 
 ls
+
+
