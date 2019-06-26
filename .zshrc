@@ -4,6 +4,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/alek/.oh-my-zsh"
 
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -108,6 +111,10 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# >>> airflow initialize >>>
+export AIRFLOW_HOME="~/wkspc/airflow-test"
+# <<< airflow initialize <<<
+
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -118,12 +125,14 @@ unset __conda_setup
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias ls="ls -FlAGHp"
+alias ls="ls -FlAGhp"
 cdls() { cd "$@" && ls; }
 alias cd="cdls"
 alias zshrc="vim ~/.zshrc"
 alias c="clear"
 mcd() { mkdir "$@" && cd "$@"; }
+alias ..="cd .."
+alias cd..="cd .."
 
 alias gst="git status"
 alias gad="git add"
@@ -146,5 +155,4 @@ alias cond="conda deactivate"
 alias coni="conda install"
 
 ls
-
 
