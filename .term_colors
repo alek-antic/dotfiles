@@ -1,0 +1,31 @@
+Basic Colors
+  Foreground: a6d4d5
+  Background: 00131a
+  Bold: 5ef9de
+  Links: 005bbb
+  Selection: 526767
+  Selected text: 66f8de
+
+Cursor Colors
+  Cursor: 51f9dd
+  Cursor Text: 021917
+
+ANSI Colors
+  Normal
+    Black: 002a32
+    Red: c1443a
+    Green: 00b452
+    Yellow: 893db8
+    Blue: 52a897
+    Magenta: 006eac
+    Cyan: 7f8d20
+    White: 516867
+  Bright
+    Black: 475563
+    Red: ff5b52
+    Green: 23e971
+    Yellow: 9f45fd
+    Blue: 6fdac6
+    Magenta: 00abff
+    Cyan: a7d533
+    White: 64f9de
