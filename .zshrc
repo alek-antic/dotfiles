@@ -4,9 +4,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/alek/.oh-my-zsh"
 
-export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -96,26 +93,6 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/alek/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/alek/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/alek/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/alek/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-# >>> airflow initialize >>>
-export AIRFLOW_HOME="~/wkspc/airflow-test"
-# <<< airflow initialize <<<
-
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -124,11 +101,24 @@ export AIRFLOW_HOME="~/wkspc/airflow-test"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+
+# >>> brew python >>>
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+# <<< brew python <<<
+
+# >>> setup airflow >>>
+export AIRFLOW_HOME="~/wkspc/data-collie/util/airflowbundle/airflow"
+# <<< setup airflow <<<
+
 
 alias ls="ls -FlAGhp"
 cdls() { cd "$@" && ls; }
 alias cd="cdls"
 alias zshrc="vim ~/.zshrc"
+alias vim_basic="vim ~/.vim_runtime/vimrcs/basic.vim"
+alias vimx="vim ~/.vim_runtime/vimrcs/extended.vim"
+alias vim_plugins="vim ~/.vim_runtime/vimrcs/plugins_config.vim"
 alias c="clear"
 mcd() { mkdir "$@" && cd "$@"; }
 alias ..="cd .."

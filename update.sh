@@ -9,3 +9,7 @@ cp -R ~/.vim_runtime "$dotfiles_dir/"
 # update zshrc
 
 cp ~/.zshrc "$dotfiles_dir/.zshrc"
+
+# update tmux.conf
+
+cp ~/.tmux.conf "$dotfiles_dir/.tmux.conf"

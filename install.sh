@@ -36,3 +36,6 @@ cp "$dotfiles_dir/.zshrc" ~/.zshrc
 # install vimrc
 cp "$dotfiles_dir/.vim_runtime" ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
+
+# install tmux.conf
+cp "$dotfiles_dir/.tmux.conf" ~/.tmux.conf
