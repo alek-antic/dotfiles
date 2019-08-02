@@ -34,7 +34,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 cp "$dotfiles_dir/.zshrc" ~/.zshrc
 
 # install vimrc
-cp "$dotfiles_dir/.vim_runtime" ~/.vim_runtime
+cp -R "$dotfiles_dir/.vim_runtime" ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 # install tmux.conf
