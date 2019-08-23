@@ -94,8 +94,9 @@ set ignorecase
 " When searching try to be smart about cases 
 set smartcase
 
-" Highlight search results
-set hlsearch
+" Don't highlight search results
+set nohlsearch
+map <leader>/ :set hlsearch!<CR>
 
 " Makes search act like search in modern browsers
 set incsearch 

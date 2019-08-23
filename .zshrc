@@ -108,7 +108,7 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 # <<< brew python <<<
 
 # >>> setup airflow >>>
-export AIRFLOW_HOME="~/wkspc/data-collie/util/airflowbundle/airflow"
+export AIRFLOW_HOME="~/wkspc/data-collie/util/airflow"
 # <<< setup airflow <<<
 
 
