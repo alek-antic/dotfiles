@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/alek/.oh-my-zsh"
+export ZSH="/Users/aantic/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -106,11 +106,6 @@ source $ZSH/oh-my-zsh.sh
 # >>> brew python >>>
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 # <<< brew python <<<
-
-# >>> setup airflow >>>
-export AIRFLOW_HOME="~/wkspc/data-collie/util/airflow"
-# <<< setup airflow <<<
-
 
 alias ls="ls -FlAGhp"
 cdls() { cd "$@" && ls; }
